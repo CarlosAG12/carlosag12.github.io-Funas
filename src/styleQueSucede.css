@@ -1,0 +1,29 @@
+.section-que-sucede-ahora{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    gap: 18px;
+    padding: 16px;
+    color: #cfcfcf;
+}
+.div-que-pasa-ahora{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+
+    gap: 24px;
+    align-items: center;
+    max-width: 50%;
+    width: 100%;
+    font-size: 18px;
+    letter-spacing: 2.5px;
+}
+@media screen and (max-width: 768px) {
+    
+    .div-que-pasa-ahora{
+        max-width: 100%;
+    }
+}

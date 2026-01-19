@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Funas Ean</title>
+    <link rel="stylesheet" href="src/style.css" />
+    <link rel="icon" href="src/images/597949327_17878581117441608_1224914637689594730_n.jpg">
+  </head>
+  <body>
+    <header>
+        <section class="contenedor-header">
+            
+            <nav class="nav-principal">
+              <a href="#inicio">Inicio</a>
+              <a href="#informacion">Sufriste Acoso?</a>
+              <a href="#emprendimientos">Emprendimientos EAN</a>
+              <a href="#contacto">Contacto</a>
+            </nav>
+          </section>
+        </header>
+        
+        <main>
+          <section id="inicio" class="section-acerca-de-funasean">
+            <nav class="contenedor-acercadeean">
+              <a href="#emprendimiento-ean">Emprendimientos</a>
+              <a href="#informacion">Has sufrido acoso?</a>
+            </nav>
+            <div class="div-acerca-de-ean">
+              <h1>
+                BIENVENIDOS A EANFUNAS! <Strong>Quienes somos?</Strong>
+              </h1>
+              <p>
+                FunasEan es una plataforma creada por estudiantes de la
+                Universidad Ean, con el objetivo de visibilizar y denunciar
+                casos de acoso y abuso sexual dentro de la comunidad universitaria.
+                A través de esta plataforma, buscamos crear un espacio seguro donde
+                las víctimas puedan compartir sus experiencias y encontrar apoyo.
+              </p>
+            </div>
+          </section>
+
+          <figure class="contenedor-image">
+              <a href="#inicio">
+                <img class="logo-funas"
+                    src="src/images/597949327_17878581117441608_1224914637689594730_n.jpg"
+                    alt="Logo FunasEan"/>
+              </a>
+            </figure>
+          
+            <section class="section-acoso">
+              <div class="contenedor-texto-acoso" id="informacion">
+              <h2 class="tiutlo">Haz sufrido acoso dentro o fuera de la universidad?</h2>
+                <p class="parrafo-acoso">
+                  Si has sido víctima de acoso o abuso sexual dentro o fuera de la
+                  universidad, es importante que sepas que no estás solo/a. En
+                  FunasEan, te ofrecemos un espacio seguro para compartir tu
+                  experiencia y encontrar apoyo. Puedes denunciar tu caso de forma
+                  anónima a través de nuestra plataforma, y nuestro equipo estará
+                  disponible para brindarte la ayuda que necesitas.
+                </p>
+              </div>
+
+              <form action="https://submify.vercel.app/your-email.com" method="post" id="form-data">
+                <fieldset>
+                  <h3 class="texto-textarea">Si te ha ocurrido un caso de acoso a ti o alguien cercano puedes hacerlo saber aca!.</h3>
+                  <div class="correo-info">
+                    <span>Correo opcional</span>
+
+                    <button
+                      type="button"
+                      class="info-btn"
+                      aria-label="Más información sobre el correo"
+                    >
+                    ?
+                    </button>
+
+                    <div class="tooltip-info">
+                      <p>
+                        Ingresar tu correo electrónico es completamente opcional.
+                        Si decides hacerlo, nos permitirá contactarte en caso de
+                        necesitar ampliar información o brindarte acompañamiento.
+                        Si prefieres no hacerlo, respetamos totalmente tu decisión.
+                      </p>
+
+                    </div>
+                  </div>
+                    <input type="email" name="email" id="email" placeholder="Ingresa tu correo electrónico" />
+                    <textarea name="text" id="text" autocomplete="on" minlength="10" placeholder="Ingresa tu caso de Acoso" required></textarea>
+                    <button type="submit" id="boton-enviar">Denunciar</button>
+                    <button type="button" id="que-sigue" hidden >Que sigue ahora?</button>
+                    <p id="form-status"></p>
+                  </fieldset>
+              </form>
+            </section>
+          </main>
+    <footer>
+      <p>©Todos los derechos reservados <Strong>Carlos Acosta</Strong></p>
+    </footer>
+    <script type="module" src="src/main.js"></script>
+  </body>
+</html>
